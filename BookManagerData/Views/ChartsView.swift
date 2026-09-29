@@ -29,11 +29,11 @@ struct ChartsView: View {
         .font(.headline)
       Chart {
         BarMark(
-          x: .value("Mount", "Male"),
+          x: .value("Gender", "Male"),
           y: .value("Value", maleAuthoredBooks.count)
         )
         BarMark(
-          x: .value("Mount", "Female"),
+          x: .value("Gender", "Female"),
           y: .value("Value", femaleAuthoredBooks.count)
         )
         .foregroundStyle(.pink)
@@ -47,23 +47,23 @@ struct ChartsView: View {
         .font(.headline)
       Chart {
         BarMark(
-          x: .value("Mount", "Shakespeare"),
+          x: .value("Author", "Shakespeare"),
           y: .value("Value", booksFor("William Shakespeare").count)
         )
         BarMark(
-          x: .value("Mount", "Tolkien"),
+          x: .value("Author", "Tolkien"),
           y: .value("Value", booksFor("J.R.R. Tolkien").count)
         )
         BarMark(
-          x: .value("Mount", "Austen"),
+          x: .value("Author", "Austen"),
           y: .value("Value", booksFor("Jane Austen").count)
         )
         BarMark(
-          x: .value("Mount", "Dickens"),
+          x: .value("Author", "Dickens"),
           y: .value("Value", booksFor("Charles Dickens").count)
         )
         BarMark(
-          x: .value("Mount", "Bronte"),
+          x: .value("Author", "Bronte"),
           y: .value("Value", booksFor("Charlotte Bronte").count)
         )
       }

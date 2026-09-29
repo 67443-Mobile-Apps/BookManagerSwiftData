@@ -30,9 +30,10 @@ struct BookDetailsView: View {
         .foregroundColor(.secondary)
         .padding(20)
     }
-    .navigationBarTitle(Text("Book Details"), displayMode: .inline)
+    .navigationTitle("Book Details")
+    .navigationBarTitleDisplayMode(.inline)
     .toolbar {
-      ToolbarItem(placement: .navigationBarTrailing) {
+      ToolbarItem(placement: .topBarTrailing) {
         Button("Edit") {
           editTitle = book.title
           editAuthor = book.author
@@ -95,7 +96,7 @@ struct EditBookView: View {
       }
       .navigationTitle("Edit Book")
       .toolbar {
-        ToolbarItem(placement: .navigationBarLeading) {
+        ToolbarItem(placement: .topBarLeading) {
           Button("Cancel") {
             isPresented = false
           }
