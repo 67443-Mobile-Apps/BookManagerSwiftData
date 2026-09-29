@@ -24,6 +24,7 @@ DerivedData/                      # Build data and intermediates
 *.xcodeproj/*.perspectivev3       # Perspective settings
 *.xcodeproj/xcuserdata/           # User-specific settings
 *.xcodeproj/project.xcworkspace/  # Internal workspace references
+BookManagerData.xcodeproj/project.pbxproj
 
 # --- Swift Package Manager ---
 # Ignore Swift Package Manager build files and package resolution.
